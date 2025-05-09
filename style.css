@@ -1,0 +1,67 @@
+/* Basic Resets and Body Styling */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Default text color */
+    display: flex; /* Use flexbox for the main layout */
+    flex-direction: column; /* Arrange children vertically */
+    min-height: 100vh; /* Make the body take at least the full viewport height */
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Green color for header */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around content */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0; /* Remove default heading margin */
+}
+
+/* Main Editor Area Styling */
+#scotia-editor-main {
+    flex-grow: 1; /* Allow main content to take up available space */
+    display: flex; /* Use flexbox to arrange stage and coding area side-by-side */
+    padding: 15px; /* Padding around the main content */
+    gap: 15px; /* Space between the stage and coding area */
+}
+
+/* Stage Area Styling */
+#scotia-stage {
+    background-color: #ffffff; /* White background for the stage */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    flex: 2; /* Takes up 2 parts of the available space */
+    padding: 20px; /* Padding inside the stage area */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* A bit more prominent shadow */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+}
+
+/* Coding Area Styling */
+#scotia-coding-area {
+    background-color: #ffffff; /* White background for the coding area */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    flex: 3; /* Takes up 3 parts of the available space (larger than stage) */
+    padding: 20px; /* Padding inside the coding area */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* A bit more prominent shadow */
+    overflow: hidden; /* Hide overflow content (important for Blockly later) */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px 20px; /* Padding around content */
+    margin-top: auto; /* Push footer to the bottom if content is short */
+}
