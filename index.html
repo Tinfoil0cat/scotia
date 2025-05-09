@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scotia Editor</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
         <h1>Scotia Editor</h1>
@@ -20,7 +21,7 @@
 
         <div id="scotia-coding-area">
             <h2>Coding Area</h2>
-            <p>Blocks will go here.</p>
+            <div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
         </div>
     </main>
 
@@ -28,5 +29,6 @@
         <p>&copy; 2025 Scotia Language</p>
     </footer>
 
-    </body>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="script.js"></script> </body>
 </html>
